@@ -30,6 +30,18 @@ Then edit `AGENTS.md` (product, stack, palette, limits, phases) and the test/typ
 | `docs/DECISIONS.md` | Durable decisions and lessons only. |
 | `docs/specs/TEMPLATE.md` | Spec template with a verification-evidence section. |
 
+## Using it with Codex
+
+- `AGENTS.md` is the shared entry point; Codex reads it natively, and `CLAUDE.md` only points to it.
+- The role files are Claude Code subagents (`.claude/agents/`). For Codex, copy the same five role files to `.codex/agents/` (or paste each role's instructions into your Codex setup); the text is tool-neutral.
+- Claude Code hooks (`.claude/hooks/`, `settings.json`) do not run in Codex. Reproduce the checks as scripts or CI: typecheck on push, and a commit-time check for `UNVERIFIED:` in the active spec.
+- Global rules for either tool: `global-CLAUDE-section.md`.
+
+## More docs
+
+- `docs/PLAYBOOK.md`: the workflow, tools and five-layer system.
+- `docs/CHAMELEON_LESSONS.md`: what worked and what hurt in Chameleon Studio.
+
 ## Calibration
 
 - Personal or low-risk project: leave `.claude/enforce-agents` out. Triage still applies.
