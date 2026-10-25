@@ -19,6 +19,7 @@ Verification (this is the step most often skipped)
 
 Rules
 - Stay in the approved phase and spec. Secrets stay server-side and are never read, printed or logged.
+- UI work: read `PRODUCT.md`/`DESIGN.md` if present. When a spec item names an Impeccable command (e.g. `/impeccable polish`), run it on exactly that target. Impeccable's edit hook reports detector findings after UI edits; fix them or record why not.
 - Fix in-scope blocking/important Reviewer findings without waiting, rerun affected checks, hand back.
 - Never self-approve medium/high-risk work. Name the next role instead of doing another role's job.
 - You may delegate bounded sub-tasks (search, targeted check) via Agent; you stay responsible.

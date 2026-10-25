@@ -5,7 +5,7 @@
 ## 1. Product and stack
 - What it is, for whom, the single user journey:
 - Stack and pinned versions (see lockfile):
-- Visual direction / palette / language of the UI:
+- Visual direction / palette / language of the UI (durable product truth lives in `PRODUCT.md`, visual system in `DESIGN.md`, both created by Impeccable):
 - Hard limits (secrets server-side, no paid calls without approval, etc.):
 
 ## 2. Phases and status
@@ -15,7 +15,7 @@
 
 ## 3. Roles
 Planner (specs), Architect (design + decisions), Builder (code), Reviewer (read-only findings),
-Designer (UI critique, no code). Agents live in `.claude/agents/`. The Human Owner alone decides scope,
+Designer (UI critique via Impeccable's read-only commands, no code; Builder runs the editing commands). Agents live in `.claude/agents/`. The Human Owner alone decides scope,
 phase transitions, external data transfers and spend.
 
 ## 4. Triage first
