@@ -9,4 +9,4 @@ Starter kit with agents, hooks and templates: https://github.com/mahdichaoub/sof
 6. Ask the owner only for phase gates, spend/provider calls, external data transfer, irreversible actions, or the same failure three times; otherwise decide, log one line, continue.
 7. Check installed framework docs (Context7 or package docs) before using APIs that may have changed.
 8. Rules that must hold get a hook, not a paragraph. Shared rules live in AGENTS.md; CLAUDE.md only points to it.
-9. New project: copy the kit (README has the commands), fill in AGENTS.md only. Propose it, do not copy unasked.
+9. New project: `node <kit>/scripts/new-project.mjs <dir> [--template web-app|blank]`, then fill in AGENTS.md only. Propose it, do not run it unasked.

@@ -1,0 +1,11 @@
+{
+  "stack": "Next.js 16 (App Router) + React 19 + TypeScript, SQLite via Node's built-in node:sqlite (Node 22.13+), email/password auth with scrypt + httpOnly session cookie, Vitest",
+  "commands": {
+    "install": "npm install",
+    "dev": "npm run dev",
+    "typecheck": "npm run typecheck",
+    "test": "npm run test",
+    "build": "npm run build",
+    "check": "npm run check"
+  }
+}
